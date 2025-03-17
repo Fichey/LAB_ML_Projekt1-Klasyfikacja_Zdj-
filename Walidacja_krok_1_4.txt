@@ -1,0 +1,17 @@
+
+
+Wyraźnie wybrany cel biznesowy.
+Wzięcie pod uwagę niezrównoważenie danych i wybranie odpowiedniej metody trenowania i sprawdzania dokładności modelu.
+Poprawne zauważenie istotnej straty w przypadku fałszywego sklasyfikowania oszustwa.
+Eksploracja przeprowadzona skrupulatnie i w ciekawy sposób. Wykresy pokazują różnice w rozkładach w różnych klasach.
+Jedynym czego mogło zabraknąć to sprawdzenia czy istnieje znacząca różnica w poszczególnych dniach (nawet w celu pokazania, że takowa nie istnieje).
+Brak jasności we wskazaniu outlier'ów w kontekście całego zbioru danych (biorąc pod uwagę amount outlier'ami byłyby transakcje zwykłe ( >5000) a nie oszustwa).
+Zauważenie że winsoryzacja jest złym pomysłem jest trafne. Dobrze wybrana metoda zbalansowania zbioru danych.
+
+Drobne rzeczy do poprawy:
+1. Brak pliku requirements.txt
+2. Zła nazwa pliku 'budowa_krok_1_4_*.*'
+3. Błąd w próbie pokazania niezależności - to niezależność implikuje cov = 0 a nie na odwrót (możliwe, że chodziło o funkcję corr() zamiast cov() co by zwracało korelację)
+4. Jedynym czego mogło zabraknąć to sprawdzenia czy istnieje znacząca różnica w poszczególnych dniach (nawet w celu pokazania, że takowa nie istnieje).
+5. Brak jasności we wskazaniu outlier'ów w kontekście całego zbioru danych (biorąc pod uwagę amount outlier'ami byłyby transakcje z amount > 3000)
+6. Ciężko zrozumieć czym jest outlier wg. time (można co najwyżej mówić o różnicach w rozkładzie i szukać skupień)
